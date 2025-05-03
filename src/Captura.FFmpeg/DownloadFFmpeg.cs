@@ -17,7 +17,8 @@ namespace Captura.FFmpeg
         {
             var bits = Environment.Is64BitOperatingSystem ? 64 : 32;
 
-            FFmpegUri = new Uri($"https://ffmpeg.zeranoe.com/builds/win{bits}/static/ffmpeg-latest-win{bits}-static.zip");
+            // FFmpegUri = new Uri($"https://ffmpeg.zeranoe.com/builds/win{bits}/static/ffmpeg-latest-win{bits}-static.zip");
+            FFmpegUri = new Uri("https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z");
 
             FFmpegArchivePath = Path.Combine(Path.GetTempPath(), "ffmpeg.zip");
         }
